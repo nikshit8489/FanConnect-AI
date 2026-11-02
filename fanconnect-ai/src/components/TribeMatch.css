@@ -1,0 +1,375 @@
+
+.tribe-section {
+  padding: 90px 9%;
+  background:
+    radial-gradient(ellipse at 50% 20%, #1c2d1b, transparent 60%),
+    #080b10;
+  scroll-margin-top: 30px;
+}
+
+.tribe-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.tribe-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c5ff4a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.tribe-heading h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  margin: 20px 0 13px;
+  letter-spacing: -2px;
+}
+
+.tribe-heading h2 span {
+  color: #c5ff4a;
+}
+
+.tribe-heading p {
+  color: #969eaa;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.tribe-form,
+.tribe-results {
+  max-width: 720px;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid #34452c;
+  border-radius: 14px;
+  background: #111720;
+  box-shadow: 0 20px 60px #0004;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 30px;
+  color: #c5ff4a;
+}
+
+.form-header h3 {
+  color: #f5f7fa;
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.form-header p {
+  color: #969eaa;
+  font-size: 11px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e6eaf0;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 47px;
+  padding: 0 14px;
+  background: #18212a;
+  color: white;
+  border: 1px solid #35414c;
+  border-radius: 7px;
+  outline: none;
+  font-size: 12px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #c5ff4a;
+}
+
+.form-group select option {
+  background: #111720;
+  color: white;
+}
+
+.language-options,
+.dna-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-options button,
+.dna-options button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 16px;
+  border: 1px solid #35414c;
+  border-radius: 7px;
+  background: #18212a;
+  color: #dce1e8;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.language-options button:hover,
+.dna-options button:hover,
+.language-options .language-active,
+.dna-options .dna-active {
+  background: #202d1c;
+  border-color: #c5ff4a;
+  color: #c5ff4a;
+}
+
+.dna-options button span {
+  font-size: 18px;
+}
+
+.find-tribe-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background: #c5ff4a;
+  color: #101609;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.find-tribe-button:hover {
+  background: #dcff92;
+  transform: translateY(-2px);
+}
+
+.privacy-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 17px;
+  color: #969eaa;
+  font-size: 10px;
+}
+
+/* RESULTS */
+
+.results-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.results-top h3 {
+  font-size: 21px;
+  margin: 13px 0 8px;
+}
+
+.results-top p {
+  color: #969eaa;
+  font-size: 11px;
+}
+
+.edit-profile {
+  padding: 10px 13px;
+  border: 1px solid #405333;
+  background: transparent;
+  color: #c5ff4a;
+  border-radius: 7px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.recommendation-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c5ff4a;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.fan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.fan-card {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 15px;
+  align-items: start;
+  padding: 20px;
+  border: 1px solid #303b47;
+  border-radius: 10px;
+  background: #18212a;
+}
+
+.fan-avatar {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #263224;
+  border-radius: 50%;
+  font-size: 23px;
+}
+
+.fan-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fan-info h4 {
+  font-size: 13px;
+}
+
+.fan-info > p {
+  margin-top: 6px;
+  color: #c5ff4a;
+  font-size: 10px;
+}
+
+.fan-info .fan-meta {
+  display: block;
+  color: #969eaa;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.fan-info .fan-bio {
+  color: #b7c0cb;
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 9px;
+}
+
+.top-match {
+  padding: 4px 7px;
+  color: #c5ff4a;
+  background: #293921;
+  border-radius: 4px;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.compatibility-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 9px;
+  background: #26351f;
+  border-radius: 8px;
+  min-width: 60px;
+}
+
+.compatibility-score strong {
+  color: #c5ff4a;
+  font-size: 17px;
+}
+
+.compatibility-score span {
+  color: #a6b394;
+  font-size: 9px;
+}
+
+.match-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.match-reasons span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #c5ff4a;
+  background: #202b1c;
+  border: 1px solid #35462d;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.demo-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 14px;
+  margin: 22px 0;
+  background: #1a251b;
+  border: 1px solid #354b2b;
+  border-radius: 8px;
+  color: #b8c3ae;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.demo-notice svg {
+  flex-shrink: 0;
+  color: #c5ff4a;
+}
+
+@media (max-width: 600px) {
+  .tribe-section {
+    padding: 60px 5%;
+  }
+
+  .tribe-form,
+  .tribe-results {
+    padding: 23px 17px;
+  }
+
+  .fan-card {
+    grid-template-columns: 38px 1fr;
+    padding: 14px;
+  }
+
+  .fan-avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  .compatibility-score {
+    grid-column: 2;
+    flex-direction: row;
+    justify-self: start;
+  }
+
+  .results-top {
+    align-items: flex-start;
+  }
+
+  .dna-options button {
+    flex: 1 1 45%;
+  }
+}

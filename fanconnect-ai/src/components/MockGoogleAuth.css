@@ -1,0 +1,260 @@
+
+.auth-page {
+  min-height: 100vh;
+  background: #080b10;
+  color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-background-glow {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #c5ff4a;
+  filter: blur(180px);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 440px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+
+.auth-brand-icon {
+  color: #c5ff4a;
+  display: flex;
+}
+
+.auth-green {
+  color: #c5ff4a;
+}
+
+.auth-card {
+  background: #111720;
+  border: 1px solid #293440;
+  border-radius: 17px;
+  padding: 38px 32px;
+  text-align: center;
+  box-shadow: 0 25px 80px #0008;
+}
+
+.auth-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #c5ff4a;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.auth-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c5ff4a;
+  box-shadow: 0 0 10px #c5ff4a;
+}
+
+.auth-hero-icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3c5031;
+  background: #19241a;
+  color: #c5ff4a;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  margin: 28px auto 22px;
+}
+
+.auth-card h1 {
+  font-size: 35px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin-bottom: 15px;
+}
+
+.auth-card h1 span {
+  color: #c5ff4a;
+}
+
+.auth-description {
+  color: #969eaa;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0 auto 28px;
+  max-width: 330px;
+}
+
+.google-signin-button {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid #d7dce2;
+  background: #fff;
+  color: #202124;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.google-signin-button:hover {
+  background: #edf0f3;
+  transform: translateY(-2px);
+}
+
+.google-logo {
+  font-size: 21px;
+  font-weight: 900;
+  background: conic-gradient(
+    #4285f4 0deg 90deg,
+    #34a853 90deg 180deg,
+    #fbbc05 180deg 260deg,
+    #ea4335 260deg 310deg,
+    #4285f4 310deg
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.auth-divider {
+  border-top: 1px solid #293440;
+  margin-top: 30px;
+  padding-top: 22px;
+  color: #737d89;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.mock-account-form {
+  text-align: left;
+}
+
+.mock-form-heading {
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.mock-form-heading h2 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.mock-form-heading p {
+  font-size: 11px;
+  color: #969eaa;
+  line-height: 1.7;
+}
+
+.mock-account-form label {
+  display: block;
+  color: #d7dce2;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 17px 0 8px;
+}
+
+.mock-account-form input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #35414e;
+  border-radius: 7px;
+  background: #080b10;
+  color: white;
+  font-size: 12px;
+  outline: none;
+}
+
+.mock-account-form input:focus {
+  border-color: #c5ff4a;
+}
+
+.mock-account-form input::placeholder {
+  color: #65707d;
+}
+
+.mock-account-form .google-signin-button {
+  margin-top: 23px;
+}
+
+.auth-back-button {
+  display: block;
+  margin: 16px auto 0;
+  background: transparent;
+  border: none;
+  color: #aab3bf;
+  font-size: 11px;
+}
+
+.auth-back-button:hover {
+  color: #c5ff4a;
+}
+
+.auth-error {
+  color: #ff7777;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.auth-security-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #969eaa;
+  font-size: 9px;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+
+.auth-security-note svg {
+  color: #c5ff4a;
+  flex-shrink: 0;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #6f7986;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+
+  .auth-card h1 {
+    font-size: 30px;
+  }
+
+  .auth-brand {
+    font-size: 20px;
+  }
+}
