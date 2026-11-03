@@ -13,14 +13,16 @@ const PORT = process.env.PORT || 5000;
 
 const httpServer = http.createServer(app);
 
+const FRONTEND_URL = "https://fanconnect-ai-frontend.onrender.com";
+
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: FRONTEND_URL,
     methods: ["GET", "POST"],
   },
 });
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: FRONTEND_URL }));
 app.use(express.json({ limit: "20kb" }));
 
 // ========================================
